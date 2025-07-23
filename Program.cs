@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
            ;
-            int[] myArray = { 2, 7, 11, 15 };
+            int[] myArray = { 1, 7, 9, 8 };
             int target = 9;
 
             int[] result = TwoSum(myArray, target);
