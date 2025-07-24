@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
            ;
-            int[] myArray = { 1, 7, 9, 8 };
+            int[] myArray = { 1, 7, 9, 2 };
             int target = 9;
 
             int[] result = TwoSum(myArray, target);
@@ -34,10 +34,8 @@
                 {
                     return new int[] { numDict[complementNumber], i };
                 }
-                if (!numDict.ContainsKey(nums[i])) 
-                {
-                    numDict[nums[i]] = i; // Store the index of the number , key is array value, value is index
-                }
+                numDict[nums[i]] = i; // Store the index of the number , key is array value, value is index
+               
             }
             throw new ArgumentException("No two sum solution");
         }
